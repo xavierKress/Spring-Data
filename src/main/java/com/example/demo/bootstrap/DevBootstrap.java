@@ -21,7 +21,7 @@ public class DevBootstrap{
     }
 
     @EventListener(ContextRefreshedEvent.class)
-    void initData() {
+    public void initData() {
         Author robertMartin = new Author("Robert", "MARTIN", LocalDate.of(1952, Month.DECEMBER, 5));
         Publisher pearson = new Publisher("Pearson");
         Book cleanCode = new Book("Clean Code", "9780132350884");

@@ -24,14 +24,14 @@ class AuthorRepositoryTest {
 
         List<Author> authorsBornBtw1950And1970 = authorRepository.
                 findAllByBirthDayBetween(
-                        LocalDate.of(1950, 01, 01),
-                        LocalDate.of(1970, 01, 01)
+                        LocalDate.of(1950, 1, 1),
+                        LocalDate.of(1970, 1, 1)
                 );
 
         List<Author> authorsBornBtw1950And1960 = authorRepository.
                 findAllByBirthDayBetween(
-                        LocalDate.of(1950, 01, 01),
-                        LocalDate.of(1960, 01, 01)
+                        LocalDate.of(1950, 1, 1),
+                        LocalDate.of(1960, 1, 1)
                 );
 
         assertEquals(2, authorsBornBtw1950And1970.size());
